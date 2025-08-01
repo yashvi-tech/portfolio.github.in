@@ -13,41 +13,43 @@
   object-fit: cover;
   margin-bottom: 1rem;
   border: 4px solid white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: white;
   color: #333;
-   transition: background-color 0.3s, color 0.3s;
+  transition:   -color 0.3s, color 0.3s;
 }
 
 /*dark mode*/
 /* Hero section in dark mode */
+
+
 body.dark-mode .hero {
-background: linear-gradient(to bottom right, white,black);
+  background: linear-gradient(to bottom right, white, black);
 
 }
 
 /* About container in dark mode */
 body.dark-mode #about .container {
-  background: linear-gradient(to bottom right, white,black);
-;
+  background: linear-gradient(to bottom right, white, black);
+
   color: black;
 }
 
 /* Skill boxes in dark mode */
 body.dark-mode #skills {
-  background:linear-gradient(to bottom right, white,black);
+  background: linear-gradient(to bottom right, white, black);
 
   color: black;
 }
 
 /* Contact box in dark mode */
 body.dark-mode .contact-box {
-  background:linear-gradient(to bottom right, white,black);
+  background: linear-gradient(to bottom right, white, black);
   color: black;
 }
 
@@ -91,8 +93,8 @@ body.dark-mode .contact-info i {
 }
 
 .datetime {
- /* color:#f9f9f9 ;*/
-  
+  /* color:#f9f9f9 ;*/
+
   margin-top: 0.5rem;
   font-size: 1rem;
 }
@@ -110,6 +112,7 @@ body.dark-mode .contact-info i {
   line-height: 1.6;
   /*color: #f0f0f0; /* if background is dark */
 }
+
 /*location*/
 .location {
   font-size: 1rem;
@@ -118,18 +121,20 @@ body.dark-mode .contact-info i {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  justify-content: center; /* optional: center horizontally */
+  justify-content: center;
+  /* optional: center horizontally */
 }
 
 .location i {
-  color: #e63946; /* red map icon */
+  color: #e63946;
+  /* red map icon */
   font-size: 1.1rem;
 }
 
 
 /* Header */
 header {
-  background:#2c3e50;
+  background: #2c3e50;
   padding: 1rem 0;
   color: #fff;
   display: flex;
@@ -167,12 +172,13 @@ header .container {
 /* Hero Section */
 .hero {
   /*background:linear-gradient(to right, );*/
-    background: linear-gradient(to bottom right, #f9f9f9);
- 
- /* color: white;*/
+  background: linear-gradient(to bottom right, #f9f9f9);
+
+  /* color: white;*/
   padding: 8rem 2rem;
   text-align: center;
-  min-height: 90vh; /* Takes up most of the screen */
+  min-height: 90vh;
+  /* Takes up most of the screen */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,9 +210,10 @@ section h2 {
 }
 
 #about .container {
-  max-width: 50%; /* half screen width */
+  max-width: 50%;
+  /* half screen width */
   margin: auto;
-  background: #f9f9f9; 
+  background: #f9f9f9;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -224,7 +231,7 @@ section h2 {
 
 /* Skills */
 #skills {
- background:#f1f1f1;
+  background: #f1f1f1;
   padding: 6rem 0;
 
 
@@ -238,10 +245,10 @@ section h2 {
 }
 
 .skill-box {
-  background:  #ffffff;
+  background: #ffffff;
   padding: 1rem 2rem;
   border-radius: 5px;
- box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -261,7 +268,8 @@ form {
   gap: 1rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -294,7 +302,7 @@ footer {
   display: inline-block;
   margin-top: 1.5rem;
   background: gray;
-  color:black;
+  color: black;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   border-radius: 5px;
@@ -343,7 +351,7 @@ form textarea {
 
 form button {
 
-  background:gray;
+  background: gray;
   color: black;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -370,7 +378,8 @@ form button:hover {
 }
 
 .contact-info a:hover {
-  color: #0077b5; /* LinkedIn Blue */
+  color: #0077b5;
+  /* LinkedIn Blue */
 }
 
 .contact-info i {
@@ -385,7 +394,9 @@ form button:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  header .logo, header nav {
+
+  header .logo,
+  header nav {
     float: none;
     text-align: center;
   }
@@ -399,13 +410,3 @@ form button:hover {
     align-items: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
