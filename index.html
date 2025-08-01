@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+
+
+</head>
+
+
+  
+
+<body>
+
+  <header>
+    <div class="container">
+         <h1>MyPortfolio</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+      <button id="darkModeToggle" class="dark-toggle">
+          <i class="fas fa-moon"></i>
+      </button>
+
+</div>
+  </header>
+
+  <section id="home" class="hero">
+    
+     
+    <div class="container">
+
+        <img src="D:\portfolio\background.jpg" alt="Yashvi Profile" class="profile-img">
+      <h2>Hello, I'm YASHVI</h2>
+      <p id="datetime" class="datetime"></p>
+      <p class="location"><i class="fas fa-map-marker-alt"></i> Surat, India</p>
+      <p class="tagline">Aspiring Web Developer & BCA Student</p>
+     <p class="description">I'm passionate about building websites and learning new technologies. 
+      I enjoy solving real-world problems with clean, creative code.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+
+    </div>
+  </section>
+
+  <section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+  <p> Hi, I’m Yashvi a 19-year-young aspiring web developer with an insatiable passion for crafting clean, user-friendly websites.
+     I'm constantly diving into the world of web technologies, sharpening my skills in HTML, CSS, and JavaScript as
+      I build intuitive digital experiences with a modern touch.
+  </p>   
+  </div>
+</section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">node.js</div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <section id="contact">
+  <div class="contact-box">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+     <div class="contact-info">
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:yashvikachhadiya100@gmail.com">yashvikachhadiya100@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Yashvi. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Move this script to the bottom of <body> -->
+<script>
+  // Update date and time every second
+  function updateDateTime() {
+    const now = new Date();
+    const formatted = now.toLocaleString('en-IN', {
+      dateStyle: 'medium',
+      timeStyle: 'short'
+    });
+    document.getElementById('datetime').textContent = formatted;
+  }
+  setInterval(updateDateTime, 1000);
+  updateDateTime();
+
+  // Run only after everything is loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById('darkModeToggle');
+    const icon = toggle.querySelector('i');
+
+    toggle.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+
+      if (document.body.classList.contains('dark-mode')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
+
+ #2c3e50;
